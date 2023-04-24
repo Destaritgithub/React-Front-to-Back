@@ -1,11 +1,11 @@
 import { FaTimes } from 'react-icons/fa';
 import Card from './shared/Card';
 
-function Feedbackitem({ item }) {
+function Feedbackitem({ item, handleDelete }) {
   return (
     <Card reverse={false}>
       <div className='num-display'>{item.rating}</div>
-      <button onClick={() => console.log(123)} className='close'>
+      <button onClick={() => handleDelete(item.id)} className='close'>
         <FaTimes color='purple' />
       </button>
       <div className='text-display'>{item.text}</div>
