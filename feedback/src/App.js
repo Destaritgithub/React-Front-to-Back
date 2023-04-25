@@ -7,6 +7,9 @@ import FeedbackForm from './components/FeedbackForm';
 
 function App() {
   const [feedback, setFeedback] = useState(feedbackData);
+  const addFeedback = (newFeedback) => {
+    console.log(newFeedback);
+  };
   const deleteFeedback = (id) => {
     if (window.confirm('Are you sure you want to delete?'))
       setFeedback(feedback.filter((item) => item.id !== id));
@@ -15,7 +18,7 @@ function App() {
     <>
       <Header text='Feedback UI' />
       <div className='container'>
-        <FeedbackForm />
+        <FeedbackForm handleAdd={addFeedback} />
         <FeedbackStatus feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>

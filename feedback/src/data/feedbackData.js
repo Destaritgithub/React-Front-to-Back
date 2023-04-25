@@ -14,5 +14,20 @@ const feedbackData = [
     rating: 5,
     text: 'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
   },
+  {
+    id: 4,
+    rating: 5,
+    text: 'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+  },
+  {
+    id: 5,
+    rating: 0,
+    text: 'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+  },
+  {
+    id: 6,
+    rating: 5,
+    text: 'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+  },
 ];
 export default feedbackData;
